@@ -38,19 +38,36 @@ export default function SignUp() {
     }
   };
   return (
-    <div className='min-h-screen mt-20'>
+    <div className='min-h-screen mt-10'>
       <div className='flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5'>
         {/* left */}
         <div className='flex-1'>
-          <Link to='/' className='font-bold dark:text-white text-4xl'>
-            <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>
-              Sahand's
-            </span>
-            Blog
+        <Link
+            to="/"
+            className="self-center whitespace-nowrap text-4xl sm:text-2xl flex-col flex  font-semibold dark:text-white"
+          >
+            <div className="flex justify-center">
+              <img
+                src="/android-chrome-192x192.png"
+                alt="Logo"
+                className="h-20 "
+              />
+            </div>
+            <div className="px-2 flex py-1 justify-center">
+              Uni
+              <span className="bg-gradient-to-r text-transparent from-cyan-500 via-sky-500 to-blue-500 bg-clip-text ">
+                Media
+              </span>
+            </div>
+
+            {/* <span className="px-2 py-1 bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500 rounded-lg text-white">
+          Uni Media
+        </span> */}
           </Link>
-          <p className='text-sm mt-5'>
-            This is a demo project. You can sign up with your email and password
-            or with Google.
+          <p className='text-sm mt-5 text-center'>
+          Unlock a world of opportunities at Uni Media. 
+          <br/>
+          Sign up now!
           </p>
         </div>
         {/* right */}

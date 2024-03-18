@@ -47,6 +47,16 @@ export const getposts = async (req, res, next) => {
       .skip(startIndex)
       .limit(limit);
 
+    //    // Record views for each post
+    // for (const post of posts) {
+    //   const newView = await Views.create({
+    //     user: req.user, // Assuming you have user information in the request
+    //     post: post._id,
+    //   });
+    //   post.views.push(newView._id);
+    //   await post.save();
+    // }
+
     const totalPosts = await Post.countDocuments();
 
     const now = new Date();

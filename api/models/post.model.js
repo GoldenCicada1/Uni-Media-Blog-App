@@ -24,6 +24,12 @@ const postSchema = new mongoose.Schema(
       type: String,
       default: 'uncategorized',
     },
+    views: [
+      { 
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Views" 
+      }
+    ],
     slug: {
       type: String,
       required: true,

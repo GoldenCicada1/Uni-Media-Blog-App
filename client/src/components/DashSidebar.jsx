@@ -12,6 +12,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { signoutSuccess } from '../redux/user/userSlice';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
+import { MdCreate } from 'react-icons/md';
 
 export default function DashSidebar() {
   const location = useLocation();
@@ -67,13 +68,24 @@ export default function DashSidebar() {
             </Sidebar.Item>
           </Link>
           {currentUser.isAdmin && (
+            <Link to='/create-post'>
+              <Sidebar.Item
+                active={tab === 'create-post'}
+                icon={MdCreate}
+                as='div'
+              >
+                Create Post
+              </Sidebar.Item>
+            </Link>
+          )}
+          {currentUser.isAdmin && (
             <Link to='/dashboard?tab=posts'>
               <Sidebar.Item
                 active={tab === 'posts'}
                 icon={HiDocumentText}
                 as='div'
               >
-                Posts
+                View Posts
               </Sidebar.Item>
             </Link>
           )}
