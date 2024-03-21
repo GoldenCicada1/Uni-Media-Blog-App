@@ -8,6 +8,7 @@ export default function Projects() {
       <h1 className="text-3xl font-semibold">Projects</h1>
       <p className="text-md text-gray-500">
       Uni Media has a myriad of exciting projects and events lined up for you to explore and engage with.
+      Check out our projects and events below and get involved!
       </p>
       <div>
         <CallToAction />
