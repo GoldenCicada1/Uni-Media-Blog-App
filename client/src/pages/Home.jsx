@@ -26,12 +26,12 @@ export default function Home() {
             the latest updates from Universities Worldwide!
           </p>
         </div>
-        <Link
+        {/* <Link
           to="/search"
           className="text-xs sm:text-sm text-teal-500 font-bold hover:underline"
         >
           View all posts
-        </Link>
+        </Link> */}
       </div>
       <div className="   p-2 bg-amber-300 bg-opacity-50  dark:bg-slate-700">
         <CallToAction />
