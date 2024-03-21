@@ -22,9 +22,8 @@ export default function Home() {
             Welcome to Uni Media
           </h1>
           <p className="text-gray-200 text-sm sm:text-base">
-            Voice of all universities: Explore articles and tutorials on web
-            development, software engineering, and more. Join us in discovering
-            the latest updates from universities worldwide!
+            Voice of all universities:Join us in discovering
+            the latest updates from Universities Worldwide!
           </p>
         </div>
         <Link
